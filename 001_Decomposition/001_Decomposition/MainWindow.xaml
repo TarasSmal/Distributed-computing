@@ -1,0 +1,20 @@
+﻿<Window x:Class="_001_Decomposition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_001_Decomposition"
+        mc:Ignorable="d"
+        Title="Головне вікно" Height="132.894" Width="554.104">
+	<Grid Margin="0,10,2,0">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="53*"/>
+			<ColumnDefinition Width="155*"/>
+			<ColumnDefinition Width="49*"/>
+		</Grid.ColumnDefinitions>
+		<Button Content="Обчислити" Name="button_calc" Margin="0,0,10,10" Click="button_calc_Click" Height="20" VerticalAlignment="Bottom" Grid.Column="1" RenderTransformOrigin="0.325,0.539" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="136" />
+		<Button Content="Ввести дані" Name="button_enter_data" Margin="10,0,0,10" RenderTransformOrigin="-0.665,0.25" HorizontalAlignment="Left" Width="87" Click="button_enter_data_Click" Grid.ColumnSpan="2" Height="22" VerticalAlignment="Bottom"/>
+		<TextBox Name="Result" Grid.ColumnSpan="3" Height="23" Margin="10,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.502,0.783" TextChanged="TextBox_TextChanged"/>
+
+	</Grid>
+</Window>
